@@ -1,36 +1,33 @@
 # Metro-Building-and-Analyzing-a-Near-Real-Time-Data-Warehouse
 
-Prerequisites
-1. MySQL Workbench: Validate the installation of MySQL by checking if it's available through the Workbench tool.
-2. Eclipse IDE- Download Eclipse, and install a JDK for setup.
-3. Connector for MySQL Adding MySQL Connector in an Eclipse Project.
-4. CSV files:
-   =>customers_data.csv
-   =>products_data.csv
-   =>transaction.csv
+This project involves building and analyzing a near-real-time Data Warehouse for METRO Shopping Store. It includes setting up a star schema for the data warehouse, implementing the MESHJOIN algorithm in Java for processing transactional data, and performing OLAP analysis using SQL queries.
 
+## Prerequisites
 
-Follow the below steps to setup and run the project:
+Before you begin, ensure you have the following tools installed:
 
-Step 1:
-    =>Open MySQL Workbench and type in the query "SELECT @@secure_file_priv"
-    =>The path received is were you have to place the product and customer csv.
+1. **MySQL Workbench**  
+   Ensure MySQL is installed and available via the MySQL Workbench tool.
 
-Step 2:
-    =>Open Meta_Data.sql file and change the csv path in it according to new path for customer and product csvs.
-    =>Save and run the sql file.
+2. **Eclipse IDE**  
+   Download and install **Eclipse IDE** along with a JDK (Java Development Kit) setup.
 
-Step 3:
-    =>open data_warehouse.sql file in workbench and run it to create schema of data warehouse.
+3. **MySQL Connector**  
+   Add the **MySQL Connector** to your Eclipse project for establishing database connections.
 
-Step 4:
-    =>open Eclipse project.
-    =>place the transaction.csv in src folder of eclipse project.
-    =>make sure mysql connector is added in eclipse project.
-    =>run the project.
+4. **CSV Files**  
+   Ensure you have the following CSV files:
+   - `customers_data.csv`
+   - `products_data.csv`
+   - `transaction.csv`
 
-Step 5:
-    =>open sql_query.sql file on workbench and run queries one by one.
+---
 
-Step 6:
-    =>see the report to undetstand what is implemented 
+## Setup and Run Instructions
+
+Follow these steps to set up and run the project:
+
+### Step 1: MySQL Configuration
+- Open **MySQL Workbench** and run the following query to get the file path location:
+  ```sql
+  SELECT @@secure_file_priv;
